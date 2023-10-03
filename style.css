@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    margin: 100px 30px 100px 30px;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: 38%, 80%;
+}
+
+h1 {
+    color: #521C4F;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 23px;
+
+    @media (min-width: 800px) {
+       font-size: 50px;
+       max-width: 400px;
+       line-height: 50px;
+       text-align: left;
+       margin-bottom: 30px;
+       margin-right: 0;
+       margin-left: 0;
+    }
+}
+
+.principal {
+    color: #918090;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 800px) {
+        line-height: 28px;
+        text-align: left;
+        max-width: 480px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 70px;
+        padding-right: 40px;
+     }
+}
+
+.ratings {
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto;
+    
+    @media (min-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 2 / 3;
+        text-align: left;
+        margin: 0;
+        max-width: 600px;
+
+
+    }
+}
+
+.quotes {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        max-width: 1180px;
+    } 
+}
+
+.split {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 20px;
+    }
+}
+
+.container .first {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px;
+    background-color: #F5F3F6;
+    color: #521C4F;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.container .second {
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px;
+    background-color: #F5F3F6;
+    color: #521C4F;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.container .third {
+    margin: 20px 0px 20px 0px;
+    padding: 20px 10px;
+    background-color: #F5F3F6;
+    color: #521C4F;
+    font-weight: 700;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 800px) {
+    .container .first {
+        display: flex;
+        padding: 15px 15px;
+        margin-right: auto;
+        margin-top: 0;
+        padding: 10px 40px;
+    }
+
+    .container .second {
+        display: flex;
+        padding: 15px 15px;
+        padding: 10px 40px;
+    }
+
+    .container .third {
+        display: flex;
+        padding: 15px 15px;
+        margin-left: auto;
+        padding: 10px 40px;
+    }
+
+    .img {
+        
+        padding-right: 30px;
+        max-width: 100%;
+        height: auto; 
+        margin-top: 5px;
+    }
+
+    .rated{
+        margin-top: 8px;
+        font-size: 2px;
+    }
+ }
+
+.img {
+    margin-bottom: 10px;
+}
+
+.split {
+    @media (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+.rated {
+    font-size: 18px;
+}
+
+.content1 {
+    background-color: #521C4F;
+    color: #F4ECF5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 35px;
+    line-height: 25px;
+}
+
+.content2 {
+    background-color: #521C4F;
+    color: #F4ECF5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 35px;
+    line-height: 25px;
+}
+
+.content3 {
+    background-color: #521C4F;
+    color: #F4ECF5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 35px;
+    line-height: 25px;
+}
+
+@media (min-width: 800px) {
+
+    .content2 {
+        transform: translateY(15px);
+    }
+
+    .content3 {
+        transform: translateY(30px);
+    }
+ }
+
+
+.splite {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    border-radius: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+
+.quote {
+    margin-top: 25px;
+}
+
+.status {
+    color: #E367B5;
+    font-weight: 700;
+}
+
+.name {
+    font-weight: 700;
+}
